@@ -1,0 +1,408 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.navbar-shadow {
+    box-shadow: 0 4px 6px rgba(248, 245, 245, 0.829);
+}
+
+.contact-shadow {
+    box-shadow: 0 0 4px 4px rgba(248, 245, 245, 0.829);
+}
+
+.contact-shadow-hover:hover {
+    box-shadow: 0 0 4px 4px rgba(248, 245, 245, 0.829);
+}
+
+.nav-link {
+    color: #3e1c67;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-item .btn,
+.btn-explore,
+.btn-send {
+    background-color: #3e1c67;
+    color: #fff !important;
+}
+
+.dash-services,
+.dash-contact,
+.dash-working {
+    position: relative;
+}
+
+.heading-main {
+    background-color: #f5f5f5;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.nav-item .btn:hover,
+.btn-explore:hover {
+    color: #3e1c67 !important;
+    background-color: #fff;
+    outline: 3px solid #3e1c67 !important;
+}
+
+.main-text-color {
+    color: #3e1c67;
+    text-align: center;
+}
+
+.hero-section {
+    background-image: url('../images/child vr.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.right-about img{
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #3e1c67;
+}
+
+.text-dark {
+    color: white;
+    background-color: black;
+}
+
+.service-card img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.footer {
+    background-color: #3e1c67;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+h3 {
+    color: #3e1c67;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.our-client-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e1c67;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+    padding: 15px;
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.our-client-box img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.working-process-content img {
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: -45px;
+}
+
+.working-process-content {
+    background-color: #3e1c67;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.project-img {
+    height: 200px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-det {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+}
+
+@media (min-width: 993px) {
+
+    .dash-services::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        right: 35%;
+        top: 50%;
+    }
+
+    .dash-services::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 35%;
+        top: 50%;
+    }
+
+    .dash-working::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        right: 30%;
+        top: 50%;
+    }
+
+    .dash-working::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+    }
+
+    .dash-contact::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    }
+
+
+    .dash-contact::before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        right: 20%;
+        top: 50%;
+    }
+}
+
+/* Medium screens (577px - 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    
+    .dash-services::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        right: 25%;
+        top: 50%;
+    }
+
+    .dash-services::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 25%;
+        top: 50%;
+    }
+
+    .dash-working::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+    }
+
+    .dash-working::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 10%;
+        top: 50%;
+    }
+
+    .dash-contact::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+    }
+
+
+    .dash-contact::before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        right: 20%;
+        top: 50%;
+    }
+}
+
+/* Small screens (up to 576px) */
+@media (max-width: 576px) {
+
+    .dash-services::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        right: 15%;
+        top: 50%;
+    }
+
+    .dash-services::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 15%;
+        top: 50%;
+    }
+
+    .dash-working::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        right: 7%;
+        top: 50%;
+    }
+
+    .dash-working::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 7%;
+        top: 50%;
+    }
+
+    .dash-contact::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+    }
+
+
+    .dash-contact::before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        right: 30%;
+        top: 50%;
+    }
+
+}
+
+
+#upArrow {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 36px;
+}
+
